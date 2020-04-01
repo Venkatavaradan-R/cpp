@@ -24,6 +24,9 @@ int strcomp(char * st1, char* st2)
         i++;
     }
     if (a!=b)return 1;
+    delete[] st1;
+    delete[] st2;
+
     return 0;
 
 }
