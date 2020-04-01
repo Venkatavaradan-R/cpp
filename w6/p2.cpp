@@ -1,4 +1,5 @@
 // fn to strcmp
+//introduces dma in cpp
 
 #include<iostream>
 #include<cstring>
