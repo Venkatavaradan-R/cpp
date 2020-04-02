@@ -23,15 +23,15 @@ int main()
 
 int removess(char* s, char* ss)
 {
-    int n = sizeof(s)/sizeof(s[0]), m = sizeof(ss)/sizeof(ss[0]), i= 0, j=0;
-
+    int n = 5, m = 3, i= 0, j=0;
+    cout<<"the size of the s and ss resp are:"<< n<< "   "<<m;
     while (i<n-m)
     {
         j=0;
         while(j<m && s[j+i]==ss[j])
             j++;
         if (j=m) return i;
-    
+        i++;
     }
     return -1;
 }
