@@ -1,5 +1,5 @@
 // linked list boueeeeeeee
-//Incomplete
+//!Incomplete
 
 #include<iostream>
 #include<cstring>
@@ -23,7 +23,6 @@ int main()
 {
 
     node* head = NULL;
-    display(head);
     insert_beg(head, 68);
     display(head);
 
@@ -37,8 +36,10 @@ int main()
 
 node* create_node(int data)
 {
-    node* temp = new node;
+    node* temp = new node();
     temp->data = data;
+    cout<<endl<<temp->data<<endl;
+
     temp->link = NULL; 
     return temp;
 
@@ -46,8 +47,8 @@ node* create_node(int data)
 
 void insert_beg(node* head, int data)
 {
-    head= create_node(data);
-    cout<<endl<<"youre gay "<<endl;
+     
+    head = create_node(data);
 
 }
 
@@ -57,7 +58,6 @@ void display(node* head)
     node* p = head;
     if(p == NULL)
     {
-
         cout<<"The LL is empty";
         return;
     }
