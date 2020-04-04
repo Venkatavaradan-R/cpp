@@ -40,4 +40,6 @@ void display (vector<int> x)
 
     }
     cout<<"\t size:"<<x.size()<<"\t capacity: "<<x.capacity()<<endl;
+
+    
 }
